@@ -1,0 +1,142 @@
+
+/* Card Based Layout - Base styles */
+
+body {
+	background: #faf8f8;
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+textarea {
+	color: #404040;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1rem;
+  color: #404040;
+}
+
+p {
+	margin-bottom: 1.5em;
+  color: #898989;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+.masthead {
+	background-color: #f72144;
+}
+
+.masthead p, .masthead p a {
+  color: white;
+}
+
+.site-title {
+	color: white;
+}
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+.card {
+	background: #e7e4e4;
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px #cccccc;
+}
+
+.card-content {
+	padding: 1em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.card-content p {
+	font-size: 80%;
+}
+
+/* Flexbox */
+/* Mobile */
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -1em;
+    }
+
+    .card {
+        display: flex;
+        flex: 0 1 calc(50% - .5em);
+        margin-bottom: 2em;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 52em) {
+  .centered {
+      max-width: 52em;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 60em) {
+    .cards {
+        margin-top: inherit;
+    }
+    
+    .card {
+        flex: 0 1 calc(25% - 2em);
+        margin-bottom: 2em;
+    }
+    .centered {
+      margin: 0 auto;
+      padding: 0 3em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
